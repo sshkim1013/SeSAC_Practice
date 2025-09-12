@@ -1,0 +1,41 @@
+.Wiki {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+header {
+  background-color: lightgray;
+  border-bottom: 2px solid gray;
+  padding: 10px;
+}
+
+main > div.web {
+  margin-top: 70px;
+}
+
+main div.back {
+  margin-bottom: 70px;
+}
+
+footer > div {
+  text-align: center;
+  color: gray;
+  background-color: lightgray;
+  border-top: 2px solid gray;
+  padding: 10px;
+}
+
+p {
+  color: gray;
+}
+
+strong {
+  color: black;
+}
+
+h1,
+h2 {
+  margin-top: 100;
+  font-weight: 800;
+}
