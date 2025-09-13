@@ -1,0 +1,47 @@
+.card {
+  width: 300px;
+  height: 230px;
+}
+
+span {
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  border-width: 3px;
+  background-color: lightblue;
+  margin-right: 5px;
+}
+
+.card > .card-header {
+  padding: 5px;
+  border: 1px solid lightgray;
+  background-color: aliceblue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  color: gray;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.think {
+  margin-top: 10px;
+}
+
+.card > .card-footer {
+  padding: 15px;
+  border: 1px solid lightgray;
+  background-color: aliceblue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h1 {
+  margin-left: 10px;
+}
