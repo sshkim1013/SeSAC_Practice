@@ -52,10 +52,10 @@
   background-color: white;
 }
 
-.main-title {
+.main-title1 {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   padding-top: 100px;
   margin-bottom: 10px;
@@ -64,7 +64,17 @@
 .main-content {
   display: flex;
   justify-content: center;
+  font-size: 25px;
   margin-bottom: 50px;
+}
+
+.main-title2 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 0px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -85,4 +95,32 @@
   margin-right: 100px;
   margin-bottom: 100px;
   margin-left: 100px;
+  padding-bottom: 80px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  align-items: flex-start;
+}
+
+.card-img-top {
+  height: 15rem;
+}
+
+.carousel {
+  margin-bottom: 50px !important;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  align-items: center;
+  background-color: rgb(49, 105, 225);
+  height: 10vh;
+}
+
+.card-title {
+  font-size: 20px;
 }
