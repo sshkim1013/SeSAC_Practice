@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  color: white;
+  background-color: rgb(49, 105, 225);
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.left {
+  font-size: 30px;
+  display: flex;
+  gap: 2rem;
+  padding-left: 5rem;
+  align-items: center;
+  font-weight: 300;
+}
+
+.right {
+  display: flex;
+  gap: 2rem;
+  padding-right: 5rem;
+  align-items: center;
+  font-size: 20px;
+}
+
+.gothic-a1 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-left: 5rem;
+  color: white;
+  background-image: url(https://tii.imgix.net/production/articles/12662/722b495f-361a-4d0f-9a1d-0e70ddd1333d.png?fm=jpg&auto=compress&w=1200);
+  background-size: 100% 100%;
+}
+
+.section1 {
+  background-color: rgb(231, 234, 234);
+}
+
+.section2 {
+  background-color: white;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.content {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.button1 {
+  margin-right: 10px;
+}
+
+.carousel {
+  margin-right: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
