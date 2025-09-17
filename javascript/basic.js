@@ -44,7 +44,7 @@ console.log(`isMember || hasCoupon -> ${isMember || hasCoupon}`);
 // score 변수에 10을 더해 재할당하고 출력한다
 let score = 85;
 console.log(score);
-score = score + 10;
+score += 10;
 console.log(score);
 
 // TODO: 나머지 연산자
