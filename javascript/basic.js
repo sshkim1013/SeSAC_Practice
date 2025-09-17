@@ -9,13 +9,13 @@ console.log(`${myName}`); // 김수환
 // 두 변수의 합을 sum 변수에 할당하여 출력한다
 let num1 = 10;
 let num2 = 20;
-console.log(`${num1 + num2}`); // 30
+console.log(`${num1 + num2}`);
 
 // TODO: 비교 연산자
 // 100이 50보다 큰지 비교 결과를 출력한다
 // 문자열 "100"과 숫자 100을 엄격하게 비교한 결과를 출력한다
-console.log(`${100 > 50}`); // true
-console.log(`${"100" > 100}`); // false
+console.log(`${100 > 50}`);
+console.log(`${"100" === 100}`);
 
 // TODO: typeof 연산자
 // "hello", 2024, true의 자료형을 각각 출력한다
