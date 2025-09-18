@@ -246,13 +246,22 @@ console.log(`최종 금액: ${finalPrice}`);
 userAge = 22;
 let hasLicense = true;
 let hasInsurance = false;
-if (userAge >= 21) {
-  if (hasLicense) {
-    if (hasInsurance) {
-      console.log("완벽한 운전자");
-    }
-    console.log("운전 가능");
-  }
+// if (userAge >= 21) {
+//   if (hasLicense) {
+//     if (hasInsurance) {
+//       console.log("완벽한 운전자");
+//     }
+//     console.log("운전 가능");
+//   }
+// } else {
+//   console.log("운전 불가");
+// }
+
+// 더 확실한 답안
+if (userAge > 21 && hasLicense && hasInsurance) {
+  console.log("완벽한 운전자");
+} else if (userAge > 21 && hasLicense) {
+  console.log("운전 가능");
 } else {
   console.log("운전 불가");
 }
@@ -301,14 +310,25 @@ if (isActive) {
 let drinkType = "coffee";
 userAge = 16;
 let isDecaf = false;
-if (drinkType === "coffee") {
-  if (userAge >= 18) {
-    console.log("커피 주문 가능");
-  } else if (userAge < 18) {
-    if (isDecaf) {
-      console.log("디카페인 커피 가능");
-    }
-  }
+// if (drinkType === "coffee") {
+//   if (userAge >= 18) {
+//     console.log("커피 주문 가능");
+//   } else if (userAge < 18) {
+//     if (isDecaf) {
+//       console.log("디카페인 커피 가능");
+//     }
+//   }
+// } else if (drinkType === "tea") {
+//   console.log("차 주문 가능");
+// } else {
+//   console.log("음료수만 가능");
+// }
+
+// 더 확실한 답안
+if (drinkType === "coffee" && userAge >= 18) {
+  console.log("커피 주문 가능");
+} else if (drinkType === "coffee" && userAge < 18 && isDecaf === true) {
+  console.log("디카페인 커피 가능");
 } else if (drinkType === "tea") {
   console.log("차 주문 가능");
 } else {
