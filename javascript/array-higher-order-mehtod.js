@@ -39,11 +39,9 @@ console.log("===");
 const fruits = ["사과", "바나나", "오렌지"];
 // 변수 fruits에 저장된 각 과일 이름을 "맛있는 [과일명]" 형식으로 출력한다
 // 출력 결과는 배열 형식으로 출력한다
-let newArr = [];
-fruits.map((element) => {
-  newArr.push(`맛있는 ${element}`);
+let newArr = fruits.map((element) => {
+  console.log(`맛있는 ${element}`);
 });
-console.log(newArr);
 
 /* 출력 결과
 맛있는 사과
@@ -73,11 +71,10 @@ console.log("===");
 const numbers2 = [1, 2, 3, 4, 5];
 // 변수 numbers2에 저장된 각 숫자를 제곱한 데이터를 모아서 새로운 배열을 만든다
 // 새로운 배열을 출력한다
-newArr = [];
-numbers2.map((element) => {
-  newArr.push(element * element);
+let result = numbers2.map((element) => {
+  return element * element;
 });
-console.log(newArr);
+console.log(result);
 
 /* 출력 결과
 [1, 4, 9, 16, 25]
@@ -89,9 +86,8 @@ console.log("===");
 const names = ["김철수", "이영희", "박민수"];
 // 변수 names에 저장된 각 이름에 "님"을 붙인 새로운 배열을 만든다
 // 새로운 배열을 출력한다
-newArr = [];
-names.forEach((element) => {
-  newArr.push(`${element}님`);
+newArr = names.map((element) => {
+  return `${element}님`;
 });
 console.log(newArr);
 
@@ -194,9 +190,8 @@ newArr = products.filter((element) => {
   }
 });
 
-newArr2 = [];
-newArr.map((element) => {
-  newArr2.push(`${element["name"]}: ${element["price"]}원`);
+newArr2 = newArr.map((element) => {
+  return `${element["name"]}: ${element["price"]}원`;
 });
 console.log(newArr);
 console.log(newArr2);
@@ -229,14 +224,10 @@ newArr = students.filter((element) => {
   if (element["score"] >= 70) {
     return true;
   }
+}).map((element) => {
+  return `${element["name"]}(${element["grade"]})`;
 });
 console.log(newArr);
-
-newArr2 = [];
-newArr.map((element) => {
-  newArr2.push(`${element["name"]}(${element["grade"]})`);
-});
-console.log(newArr2);
 
 /* 출력 결과
 ["김철수(A)", "이영희(A)", "박민수(B)", "최지영(A)"]
