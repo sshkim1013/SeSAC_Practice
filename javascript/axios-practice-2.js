@@ -6,7 +6,6 @@ const DOMAIN_NAME = "https://dummyjson.com";
 // 아래 요구사항을 참고하여 코드를 작성한다
 // 1. ID가 10인 상품(Product) 조회 요청
 // 2. 응답 데이터 객체에서 리뷰(reviews) 배열을 찾아서 출력
-
 async function getReviewsFromProduct(id) {
   const response = await axios.get(`${DOMAIN_NAME}/products/${id}`);
   const data = response["data"];
@@ -47,7 +46,6 @@ getReviewsFromProduct(10);
 // 1. ID가 10인 상품(Product) 조회 요청
 // 2. 응답 데이터 객체에서 리뷰(reviews) 배열 추출
 // 3. 리뷰(reviews) 배열에 포함된 점수(rating)로 평균 점수(rating) 계산 후 출력
-
 async function getRatingOfReviews(id) {
   const response = await axios.get(`${DOMAIN_NAME}/products/${id}`);
   const data = response["data"];
@@ -67,7 +65,6 @@ getRatingOfReviews(10);
 // 아래 요구사항을 참고하여 코드를 작성한다
 // 1. 게시글(posts) 태그(tag list) 목록 조회 요청
 // 2. 응답 데이터를 출력한다
-
 async function getTagList() {
   const response = await axios.get(`${DOMAIN_NAME}/posts/tag-list`);
   const data = response["data"];
@@ -101,6 +98,12 @@ getTagList();
 // 아래 요구사항을 참고하여 코드를 작성한다
 // 1. 특정 태그의 게시글(posts) 목록 조회 요청
 // 2. 응답 데이터를 출력한다
+async function getAllPostsTags() {
+  const response = await axios.get(`${DOMAIN_NAME}/posts/tag/books`);
+  const data = response["data"];
+  console.log(data);
+}
+getAllPostsTags();
 
 /* 출력 결과
 // life 태그 게시글
@@ -183,13 +186,19 @@ getTagList();
   skip: 0,
   limit: 4
 }
-
 */
 
 // TODO: 상품명으로 상품(Products) 조회(Search products) 후 검색 수(total) 출력
 // 아래 요구사항을 참고하여 코드를 작성한다
 // 1. 상품명으로 상품(Products) 조회(Search products) 요청
 // 2. 객체 데이터에서 검색 수(total) 출력
+async function getProductsTotalForName() {
+  const response = await axios.get(`${DOMAIN_NAME}/products/search?q=phone`);
+  const data = response["data"];
+  const total = data["total"];
+  console.log(total);
+}
+getProductsTotalForName();
 
 /* 출력 결과
 // phone 검색 시
