@@ -1,13 +1,12 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Form from "./components/EventHandling/Form";
+import ProductContainer from "./components/ProductCard/ProductContainer";
+import UserCardContainer from "./components/UserCard/UserCardContainer";
 
 export default function App() {
   return (
     <>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      <ProductContainer></ProductContainer>
+      <UserCardContainer></UserCardContainer>
     </>
   );
 }
