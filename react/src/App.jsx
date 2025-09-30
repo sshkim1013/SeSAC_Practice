@@ -1,12 +1,10 @@
-import Form from "./components/EventHandling/Form";
-import ProductContainer from "./components/ProductCard/ProductContainer";
-import UserCardContainer from "./components/UserCard/UserCardContainer";
+import React from "react";
+import Carts from "./components/Carts/Carts";
 
 export default function App() {
   return (
-    <>
-      <ProductContainer></ProductContainer>
-      <UserCardContainer></UserCardContainer>
-    </>
+    <div>
+      <Carts></Carts>
+    </div>
   );
 }
