@@ -1,10 +1,10 @@
 import React from "react";
-import QuoteContainer from "./components/DummyJSON/QuoteContainer";
+import RecipeContainer from "./components/Recipe/RecipeContainer";
 
 export default function App() {
   return (
     <div>
-      <QuoteContainer></QuoteContainer>
+      <RecipeContainer></RecipeContainer>
     </div>
   );
 }
