@@ -1,12 +1,10 @@
 import React from "react";
-import Counter from "./components/Counter/Counter";
-import Calculator from './components/Calculator/Calculator';
+import QuoteContainer from "./components/DummyJSON/QuoteContainer";
 
 export default function App() {
   return (
     <div>
-      <Counter></Counter>
-      <Calculator></Calculator>
+      <QuoteContainer></QuoteContainer>
     </div>
   );
 }
