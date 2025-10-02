@@ -1,10 +1,10 @@
 import React from "react";
-import RecipeContainer from "./components/Recipe/RecipeContainer";
+import Container from "./components/PostLimitSkip/Container";
 
 export default function App() {
   return (
     <div>
-      <RecipeContainer></RecipeContainer>
+      <Container></Container>
     </div>
   );
 }
