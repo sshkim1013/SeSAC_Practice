@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "./components/PostLimitSkip/Container";
-import MovieSearch from "./components/TBDM/MovieSearch";
+
+import MovieSearch from "./components/TBDBPractice/MovieSearch";
 
 export default function App() {
   return (
