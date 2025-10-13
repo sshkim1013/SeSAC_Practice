@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import CartsList from "../components/CartsList";
+import PostsList from "../../components/PostsList";
 
-export default function Carts() {
+export default function Posts() {
   const navigate = useNavigate();
 
   return (
@@ -15,9 +15,9 @@ export default function Carts() {
       >
         홈페이지로 이동
       </button>
-      <h1 className="text-5xl">Carts ID</h1>
+      <h1 className="text-5xl">Posts</h1>
       <br />
-      <CartsList />
+      <PostsList />
     </div>
   );
 }
