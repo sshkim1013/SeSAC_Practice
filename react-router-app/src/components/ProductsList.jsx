@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PATHS from "../constants/paths";
 
 const BASE_URL = "https://dummyjson.com";
 
@@ -21,7 +22,7 @@ export default function ProductsList() {
     <ul>
       {products.map((product) => {
         return (
-          <Link to={`/dummy/products/${product["id"]}`}>
+          <Link to={PATHS["DUMMY"].getProductDetail(product["id"])}>
             <li key={product["id"]}>
               {product["id"]}. {product["title"]}
             </li>

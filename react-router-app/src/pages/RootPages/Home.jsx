@@ -1,16 +1,10 @@
 import { Link } from "react-router-dom";
+import PATHS from "../../constants/paths";
 
 export default function Home() {
   return (
     <div>
-      {/* <Link to="/">홈</Link>
-      <br />
-      <Link to="/dummy/products">제품 목록</Link>
-      <br />
-      <Link to="/dummy/carts">장바구니 목록</Link>
-      <br />
-      <Link to="/dummy/posts">게시글 목록</Link> */}
-      <Link to="/dummy">더미 페이지</Link>
+      <Link to={PATHS["DUMMY"]["INDEX"]}>더미 페이지</Link>
     </div>
   );
 }
