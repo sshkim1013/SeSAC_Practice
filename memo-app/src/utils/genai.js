@@ -6,12 +6,16 @@ const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 // AI 객체 생성
 const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
+// AI Chat 객체 생성
 const chat = ai.chats.create({
   model: "gemini-2.5-flash",
 });
+
+// 응답 스키마
 const responseSchema = {
   type: "object",
   properties: {
+    // 객체의 속성들
     isMemo: {
       type: "boolean",
       description: "할 일, 메모, 업무, 계획 등 관련 여부",
@@ -25,20 +29,10 @@ const responseSchema = {
       description: "할 일 마감 기한(YYYY-MM-DD)",
     },
   },
-  required: ["ismemo", "content", "dueDate"],
+  required: ["isMemo", "content", "dueDate"],
   additionalProperties: false,
 };
-// const config = {
-//   temperature: 0,
-//   maxOutputTokens: 1000,
-//   stopSquences: "//n//n",
 
-//   SystemInstruction: [
-//     "당신은 전문 IT 개발자 입니다",
-//     "오로지 javascript 개발 개념에 대한 질문에만 대답해야 합니다",
-//     "javascript 개발 개념 질문이 아니면 답변 할 수 없습니다",
-//   ],
-// };
 const systemInstruction = [
   `오늘 날짜: ${new Date().toISOString().split("T")[0]}`,
   "당신은 할 일 관리 AI입니다. 오직 할 일이나 업무 관련 내용만 처리합니다.",
@@ -49,7 +43,9 @@ const systemInstruction = [
 ];
 
 const config = {
-  responseMimoType: "application/json", // 응답 형식
-  responseJsonSchema: responseSchema, // 응답 json 구조
+  responseMimeType: "application/json", // 응답 형식(확장자)
+  responseJsonSchema: responseSchema, // 응답 JSON 구조
+  systemInstruction: systemInstruction,
 };
+
 export { ai, chat, config };
